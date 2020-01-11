@@ -1,0 +1,1424 @@
+/* PC */
+@media (min-width: 992px) {
+
+  .DepartmentContent,
+  .moonBox,
+  .competion,
+  .projectContent,
+  .group,
+  .secondScreen {
+    opacity: 0
+  }
+
+  .teamRight {
+    display: none;
+  }
+
+  .team {
+    background: linear-gradient(#f2c2b3, 20%, #ffedd6);
+  }
+
+  .contactUs {
+    background: #180d1b;
+  }
+
+  .activity {
+    background: linear-gradient(#ffedd6, 5%, #ffedd678, #f6e2c821, #fafafa 90%);
+  }
+
+  .teamBox {
+    position: relative;
+    margin-top: -100vh;
+  }
+
+  .teamBoxCloud {
+    position: absolute;
+    top: -4%;
+  }
+
+  .teamBoxCloud img {
+    width: 100%;
+  }
+
+  .presidium {
+    height: 400vh;
+  }
+
+  /* project */
+  .project {
+    height: 31vh;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(#fff6f66e, #fff6f603);
+  }
+
+  .projectContent {
+    flex-basis: 25%;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .projectContent:hover .blackScreen {
+    opacity: 0;
+  }
+
+  .projectContent:hover .light {
+    background: green;
+  }
+
+  .projectContent:hover .projectDes {
+    opacity: 0;
+  }
+
+  .projectImgBox {
+    width: 82%;
+    max-height: 65%;
+    overflow: hidden;
+    border: 0.71vw solid #000000;
+    margin: 0 auto;
+  }
+
+  .projectImgBox img {
+    width: 100%;
+    transition: all 3s ease-in-out;
+  }
+
+  .light {
+    position: absolute;
+    width: 1.2vh;
+    border-radius: 50%;
+    background: red;
+    height: 1.2vh;
+    bottom: 30%;
+    right: 12%;
+    transition: all .5s ease-in-out;
+    z-index: 3;
+  }
+
+  .base {
+    position: absolute;
+    height: 6%;
+    width: 82%;
+    background: #c5c2bf;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0px 0px 15px 15px;
+  }
+
+  .tray {
+    position: absolute;
+    top: 71%;
+    left: 50%;
+    transform: translate(-48%, 0%);
+  }
+
+  .blackScreen {
+    width: 82%;
+    background: black;
+    height: 65%;
+    position: absolute;
+    top: 0%;
+    left: 9%;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+
+  .projectDes {
+    position: absolute;
+    bottom: 60%;
+    text-align: center;
+    width: 100%;
+    font-size: 1.3rem;
+    color: #969696;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    transition: opacity .1s;
+  }
+
+  /* illustrations */
+  .illustrations {
+    position: relative;
+    height: 200vh;
+    z-index: 2;
+  }
+
+  .blueBgBox {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30vh;
+    background: #5350a4;
+    background: radial-gradient(150% 50%, #5350a4 0%, rgba(253, 214, 189, 0) 100%);
+    z-index: 3;
+    top: 75%;
+    height: 45%;
+  }
+
+  .purpleBgBox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    background: linear-gradient(#fff 50%, #9264ae 98%);
+    z-index: 1;
+  }
+
+  .illustrationsHouse {
+    position: sticky;
+    width: 100%;
+    z-index: 4;
+    height: 100vh;
+    top: 0;
+  }
+
+  .illustrationsHouse img {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+
+  #illustrationsTree {
+    position: absolute;
+    left: 0%;
+    transition: all .3s;
+    transform: scale(5);
+    display: none;
+    bottom: 0;
+  }
+
+  /* presidium */
+
+  .presidium {
+    height: 400vh;
+  }
+
+  .Presidium:hover .PresidiumSaying {
+    opacity: 1;
+    border: 3px solid #a180b47d;
+    box-shadow: 6px 4px 20px 0px #8d7c7c;
+    transition: border-top-color 0.1s linear 0.3s, border-right-color 0.1s linear 0.1s, border-bottom-color 0.1s linear 0s, border-left-color 0.1s linear 0.11s;
+  }
+
+  .Presidium:hover .PresidiumSaying p {
+    opacity: 1;
+  }
+
+  .presidiumContent {
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(#282135, 70%, #4a3737);
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+  }
+
+  .presidiumContent>ul {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    display: flex;
+    align-items: flex-end;
+    width: 150vw;
+    transition: all .3s;
+  }
+
+  .presidiumContent>ul li {
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+    position: relative;
+    align-items: center;
+  }
+
+  .presidiumContent ul li:nth-child(1) {
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: #ffffff;
+    font-size: 1.6rem;
+    padding-right: 9vw;
+  }
+
+  .presidiumContent ul li:nth-child(11) div.PresidiumSaying {
+    top: -55vh;
+  }
+
+  .presidiumContent ul li:not(:first-child) {
+    font-size: 25px;
+    line-height: 1.3;
+    transition: all .5s ease-in-out;
+  }
+
+  .presidiumContent ul li:not(:first-child) p {
+    color: #add3d0;
+  }
+
+  .presidiumContent li.musicpaper {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: -50vw;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    width: 120%;
+  }
+
+  .presidiumContent li.musicpaper .end {
+    position: absolute;
+    left: 100%;
+    top: -1px;
+    bottom: -1px;
+    margin-left: -1px;
+    width: 6px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .presidiumContent li.musicpaper.eq0 {
+    top: 20%;
+    height: 60%;
+  }
+
+  .presidiumContent li.musicpaper.eq1 {
+    top: 35%;
+  }
+
+  .presidiumContent li.musicpaper.eq2 {
+    top: 50%;
+  }
+
+  .presidiumContent li.musicpaper.eq3 {
+    top: 65%;
+  }
+
+  .presidiumContent li.musicpaper.eq4 {
+    top: 80%;
+  }
+
+  .presidiumContent li.musicpaper.eq4 .end {
+    top: -100%;
+    bottom: 100%;
+    width: 2px;
+    margin-top: -1px;
+    margin-left: -7px;
+  }
+
+  .presidiumContent li.presidiumCloud {
+    position: absolute;
+    bottom: -52%;
+  }
+
+  .presidiumContentCloud {
+    display: flex;
+  }
+
+  .PresidiumTag {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .PresidiumYear {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+  }
+
+  .PresidiumPortrait {
+    width: 3vw;
+  }
+
+  .PresidiumPortrait>img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .PresidiumPortrait>img:hover {
+    animation: scale .5s;
+  }
+
+  .presidiumMobile {
+    display: none;
+  }
+
+  .PresidiumSaying {
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    position: absolute;
+    top: -35vh;
+    width: 15vw;
+    min-height: 30vh;
+    left: -3vw;
+    color: #ffffff;
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+    padding: 0.5rem;
+    border-color: transparent;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .PresidiumSaying:hover {
+    box-shadow: 2px 2px 2px 2px #ddd;
+  }
+
+  .PresidiumSaying p {
+    opacity: 0;
+    word-break: break-all;
+    transition: all .2s ease-in-out;
+    transition-delay: .2s;
+  }
+
+  .u-tri {
+    display: inline-block;
+    border-top: 20px solid #a180b47d;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    bottom: -40px;
+    left: 40%;
+  }
+
+  .moonBox {
+    width: 28vw;
+  }
+
+  .moonBox>img {
+    width: 100%;
+  }
+
+  /* activity */
+  .activityIntroductionText {
+    font-size: 1.5rem;
+    letter-spacing: .3rem;
+    padding: .5rem;
+    position: absolute;
+    top: 108%;
+    z-index: -1;
+    height: 272%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555555ba;
+  }
+
+  .activityIntroduction:hover div {
+    transform: rotate3d(0, 1, 0, 90deg);
+  }
+
+  .competion:nth-child(1) {
+    top: 5%;
+    left: 35%;
+  }
+
+  .competion:nth-child(2) {
+    top: 24%;
+    left: 10%;
+  }
+
+  .competion:nth-child(3) {
+    top: 43%;
+    left: 28%;
+  }
+
+  .competion:nth-child(4) {
+    top: 60%;
+    left: 60%;
+  }
+
+  .slowpoke {
+    position: absolute;
+    bottom: 4%;
+    left: 0;
+    transition: all 3s;
+    width: 50%;
+    z-index: -1;
+  }
+
+  .cloudBoxA,
+  .cloudBoxB,
+  .cloudBoxC {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    /* background: #ffedd64f; */
+  }
+
+  .cloudBoxA svg {
+    fill: #f5ddd6;
+    opacity: 0.6;
+    animation: cloudMoveA 5s infinite;
+    position: absolute;
+    width: 30%;
+  }
+
+  .cloudBoxB svg {
+    fill: #e7c9d2;
+    opacity: 0.8;
+    position: absolute;
+    animation: cloudMoveB 5s infinite;
+    width: 30%;
+  }
+
+  .cloudBoxC svg {
+    fill: #e7c9d2;
+    position: absolute;
+    animation: cloudMoveC 5s infinite;
+    width: 30%;
+  }
+
+  .cloudBoxA svg:nth-child(1) {
+    top: 15%;
+    left: 3%;
+  }
+
+  .cloudBoxA svg:nth-child(2) {
+    top: 25%;
+    left: 0%;
+  }
+
+  .cloudBoxA svg:nth-child(3) {
+    top: 70%;
+    left: 22%
+  }
+
+  .cloudBoxA svg:nth-child(4) {
+    top: 59%;
+    left: 29%;
+  }
+
+  .cloudBoxA svg:nth-child(5) {
+    top: 69%;
+    left: 37%;
+  }
+
+  .cloudBoxA svg:nth-child(6) {
+    top: 3%;
+    right: 6%;
+  }
+
+  .cloudBoxA svg:nth-child(7) {
+    top: 38%;
+    right: 12%;
+    fill: #e7c9d2;
+  }
+
+  .cloudBoxA svg:nth-child(8) {
+    top: 41%;
+    right: 17%;
+  }
+
+  .cloudBoxB svg:nth-child(1) {
+    top: 50%;
+    left: 33%;
+    fill: #f5ddd6;
+  }
+
+  .cloudBoxB svg:nth-child(2) {
+    top: 46%;
+    left: 40%;
+  }
+
+  .cloudBoxB svg:nth-child(3) {
+    top: 9%;
+    left: 85%;
+  }
+
+  .cloudBoxB svg:nth-child(4) {
+    top: 80%;
+    left: 8%;
+  }
+
+  .cloudBoxB svg:nth-child(5) {
+    top: 3%;
+    left: 70%;
+  }
+
+  .cloudBoxC svg:nth-child(1) {
+    top: 36%;
+    right: 32%;
+  }
+
+  .cloudBoxC svg:nth-child(2) {
+    top: 5%;
+    fill: #f5ddd6;
+    right: 15%;
+  }
+
+  .cloudBoxC svg:nth-child(3) {
+    top: 75%;
+    right: 10%;
+  }
+
+  .cloudBoxC svg:nth-child(4) {
+    top: 14%;
+    right: 7%;
+  }
+
+  .cloudBoxB {
+    margin-top: 100vh;
+  }
+
+  .cloudBoxC {
+    margin-top: 200vh;
+  }
+
+  @keyframes cloudMoveA {
+    0% {
+      transform: translateX(0px) scale(0.9);
+    }
+
+    50% {
+      transform: translateX(20px) scale(0.9);
+    }
+
+    100% {
+      transform: translateX(0px) scale(0.9);
+    }
+  }
+
+  @keyframes cloudMoveB {
+    0% {
+      transform: translateX(0px) scale(1.2);
+    }
+
+    50% {
+      transform: translateX(20px) scale(1.2);
+    }
+
+    100% {
+      transform: translateX(0px) scale(1.2);
+    }
+  }
+
+  @keyframes cloudMoveC {
+    0% {
+      transform: translateX(0px) scale(1.5);
+    }
+
+    50% {
+      transform: translateX(20px) scale(1.5);
+    }
+
+    100% {
+      transform: translateX(0px) scale(1.5);
+    }
+  }
+
+  @keyframes scale {
+    0% {
+      transform: scale(1, 1);
+    }
+
+    50% {
+      transform: scale(1.1, .9);
+    }
+
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+  /* contactUs */
+  .contactWay h3::before {
+    position: absolute;
+    left: -490%;
+    top: 50%;
+    width: 400%;
+    height: 1px;
+    content: " ";
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .contactWay p {
+    transition: all .3s;
+  }
+
+  .contactWay p:hover {
+    transform: scale(1.1);
+  }
+
+  /* team */
+  .backgroundImg {
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+    transition: all 2.2s ease-in-out;
+    z-index: 1;
+  }
+
+  .teamLeft {
+    width: 40%;
+    position: relative;
+    z-index: 2;
+    transition: all .3s;
+  }
+
+  #Group {
+    position: absolute;
+    left: 75%;
+    transition: all .3s;
+  }
+
+  .group:hover .GroupLogo {
+    transform: translateX(-200%);
+  }
+
+  .group:hover .GroupComic {
+    transform: translateX(-200%);
+  }
+
+  .group:hover .groupText {
+    opacity: 1;
+  }
+
+  .teamLeftLogo {
+    width: 30%;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    /* animation: bounce 2.2s 1; */
+    box-shadow: 6px 4px 20px 2px #46393963;
+    transition: all .8s ease-in-out
+  }
+
+  .teamLeftBox img:nth-child(1) {
+    z-index: 2;
+  }
+
+  .teamLeftBox img:nth-child(2) {
+    width: 17%;
+  }
+
+  .teamLeftBox img:nth-child(3) {
+    width: 15%;
+  }
+
+  .teamLeftBox img:nth-child(4) {
+    width: 14%;
+  }
+
+  .teamLeftBox img:nth-child(5) {
+    width: 15%;
+  }
+
+  .teamLeftBox img:nth-child(6) {
+    width: 16%;
+  }
+
+  .GroupLogo {
+    width: 20%;
+    height: 30%;
+    margin: auto 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* DepartmentContent */
+  .DepartmentContent:hover {
+    box-shadow: 8px 7px 11px 4px #e8e7da
+  }
+
+  .DepartmentContent:hover .hiddenImg {
+    display: block;
+    animation: hiddenImgJump .3s 1 forwards;
+  }
+
+  .hiddenImg {
+    position: absolute;
+    display: none;
+    top: -100%;
+    width: 20vw;
+    left: 40%;
+  }
+
+  .hiddenImg>img {
+    width: 100%;
+  }
+
+  @keyframes hiddenImgJump {
+    0% {
+      transform: translateY(10vh);
+    }
+
+    50% {
+      transform: translateY(-10vh);
+    }
+
+    100% {
+      transform: translateY(0vh);
+    }
+  }
+
+  /* nav */
+
+  .nav.navigationShow ul li {
+    opacity: 1;
+  }
+
+  .nav.navigationShow .navBg {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+
+  .nav.navigationShow .navBgRight {
+    border-bottom-right-radius: 80%;
+  }
+
+  .nav.navigationShow .navigationLogo {
+    transform: translateX(0);
+  }
+
+
+  .nav.navigationHidden .navBgRight {
+    border-bottom-right-radius: 0;
+  }
+
+  .nav.navigationHidden .navigationLogo {
+    transform: translateX(50vw);
+  }
+
+  .nav.navigationHidden ul li,
+  .nav.navigationHidden .navBg {
+    transition-delay: .4s;
+  }
+
+  .nav.navigationHidden ul li {
+    opacity: 0;
+  }
+
+  .nav.navigationHidden .navBg {
+    transform: rotate3d(0, 1, 0, 90deg);
+  }
+
+  .stick {
+    position: absolute;
+    width: 10px;
+    height: 100px;
+    transform: translate(-50%, -50%) rotate(-75deg);
+    left: 50%;
+    background-color: rgba(220, 160, 40, 0.7);
+    top: 50%;
+    opacity: 0;
+    transition: opacity 0.1s;
+  }
+
+  .navigationBox>ul li:nth-child(1) .stick {
+    opacity: 1;
+  }
+
+  .navigationBox>ul li:hover .stick {
+    opacity: 1 !important;
+  }
+
+  .navigationBox>ul li h3 {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .navigationBox>ul li h3 span {
+    font-size: 1.5rem;
+  }
+
+  .navigationBox>ul li h3 a {
+    transition: all .2s;
+    text-decoration: none;
+  }
+
+  .navigationBox>ul li h3 a:hover {
+    transform: scale(1.5);
+  }
+
+  .navBg {
+    background: rgba(0, 0, 0, 0.8);
+    transition: all .3s;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: rotate3d(0, 1, 0, 90deg);
+    width: 100vw;
+    display: flex;
+  }
+
+  .navBgLeft {
+    width: 30%;
+    height: 100%;
+    background: rgba(60, 176, 161, 0.8);
+    transition: all .3s;
+    transition-delay: .2s;
+  }
+
+  .navBgRight {
+    width: 70%;
+    height: 100%;
+    background: rgba(60, 176, 161, 0.8);
+    transition: all .3s;
+    transition-delay: .2s;
+  }
+
+  .navigationLogo {
+    width: 20%;
+    height: 45%;
+    transition: all .5s;
+    transform: translateX(50vw);
+  }
+
+  .navigationLogo>img {
+    width: 100%;
+  }
+
+  @keyframes load {
+    0% {
+      transform: translateY(10vh) scale(0);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+  }
+
+}
+
+/* 中等大小PC */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .littleThings>img {
+    width: 20%;
+  }
+
+  #logoText {
+    right: 5%;
+    top: 19%;
+  }
+
+  #logoText>p {
+    font-size: 10rem;
+  }
+
+  .department {
+    width: 90%;
+  }
+
+  .DepartmentContent {
+    width: 45%;
+    height: 35%;
+  }
+
+  .DepartmentContentImg {
+    width: 100%;
+    margin: 0;
+  }
+
+  .DepartmentContent p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+
+  .presidiumContent ul li:nth-child(1) {
+    font-size: 1.7rem;
+  }
+
+  .presidiumContent>ul {
+    width: 200vw;
+  }
+
+  .groupText {
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .PresidiumSaying {
+    width: 20vw;
+  }
+
+  .presidiumContent ul li:nth-child(11) div.PresidiumSaying {
+    top: -50vh;
+  }
+
+  .activityIntroductionText {
+    font-size: 1.2rem;
+  }
+
+  .contactWay h3 {
+    font-size: 1rem;
+  }
+
+  #nav {
+    width: 8%;
+  }
+
+  .navShow .navLine:nth-child(1) {
+    transform: rotate(-45deg) translate(-28%, 250%);
+  }
+}
+
+/* 移动端 */
+@media (max-width: 991px) {
+
+  canvas,
+  .GroupImgBox img:nth-child(1),
+  .teamLeft,
+  .project,
+  .cloudBoxA,
+  .cloudBoxB,
+  .cloudBoxC,
+  .activitySlideBox,
+  #shadow,
+  .illustrations,
+  .stick,
+  .littleThings,
+  .teamBoxCloud,
+  .activityIntroductionText,
+  .hiddenImg,
+  .slowpoke,
+  .back {
+    display: none;
+  }
+
+
+  .container {
+    background: linear-gradient(#242234, #5a5962, #4e4c64, #242234, #000000);
+  }
+
+  .logo {
+    height: 100vh;
+  }
+
+  .DepartmentContent:nth-child(2) {
+    position: inherit;
+    right: 0;
+  }
+
+  #logoText {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 0;
+    line-height: 2;
+  }
+
+  #logoText>p {
+    font-size: 5rem;
+  }
+
+  .logoPurplePlant>img {
+    display: none;
+  }
+
+  .department {
+    margin-top: 35vh;
+    width: auto;
+    align-items: center;
+    height: 200vh;
+  }
+
+  .DepartmentContent {
+    width: auto;
+    min-height: 25%;
+    margin: 0 2%;
+    padding: 0.5rem;
+  }
+
+  .DepartmentContentImg {
+    width: 200%;
+  }
+
+  .DepartmentContent p {
+    font-size: 1rem;
+    padding: 0 1vw;
+  }
+
+  .backgroundImg {
+    display: none;
+  }
+
+  .teamRight {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .group {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3%;
+  }
+
+  .group:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .groupText {
+    opacity: 1;
+    margin: 0;
+    font-size: 1rem;
+    color: #ffffff;
+    transition-duration: 0s;
+  }
+
+  .GroupComic {
+    width: 100%;
+  }
+
+  .team {
+    height: auto;
+    position: relative;
+  }
+
+  .activity {
+    height: 75vh;
+    width: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100vh;
+  }
+
+  .activityImgBox {
+    display: flex;
+    width: 400vw;
+    transition: all .3s;
+  }
+
+  .competion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    position: inherit;
+  }
+
+  .competion img {
+    width: 100vw;
+    height: 33vh;
+    opacity: 1;
+    border-radius: 25px;
+    padding: 1rem;
+  }
+
+  .competionName {
+    text-align: center;
+    -webkit-text-fill-color: #ddd;
+    font-size: 1.3rem;
+    transform: skew(0deg);
+    transition: none;
+  }
+
+  .presidium {
+    display: none;
+  }
+
+  .presidiumMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 130vh;
+    overflow-x: hidden;
+    margin-top: 10vh;
+  }
+
+  .presidiumMobile_2019,
+  .presidiumMobile_2018,
+  .presidiumMobile_2017 {
+    width: 100vw;
+  }
+
+  .presidiumMobile_2019>ul,
+  .presidiumMobile_2018>ul,
+  .presidiumMobile_2017>ul {
+    display: flex;
+    width: 500%;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .presidiumMobile_2017>ul {
+    width: 400%;
+  }
+
+  .presidiumMobile_2019>ul li,
+  .presidiumMobile_2018>ul li,
+  .presidiumMobile_2017>ul li {
+    color: #ffffff;
+    position: relative;
+    width: 100%;
+    margin: 0 0.5rem;
+  }
+
+  .presidiumMobile_2019>ul li h3,
+  .presidiumMobile_2018>ul li h3,
+  .presidiumMobile_2017>ul li h3 {
+    line-height: 1.5;
+    font-size: 1.3rem;
+    width: 30%;
+  }
+
+  .presidiumMobilePortrait {
+    width: 30%;
+  }
+
+  .presidiumMobileDes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .presidiumMobilePortrait>img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .presidiumMobileSaying {
+    display: none;
+    position: absolute;
+    top: 0;
+    border: 1px solid #ffffff;
+    height: 100%;
+    padding: 0.5rem;
+    width: 100%;
+    word-break: break-all;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactWay {
+    position: inherit;
+    width: 100vw;
+  }
+
+  .contactWay h3 {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .navMobile {
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .navMobile>ul {
+    height: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav {
+    width: 15%;
+  }
+
+  .navMobile.navigationShow ul li,
+  .navMobile.navigationShow {
+    transition-delay: .1s;
+  }
+
+  .navMobile.navigationShow ul li {
+    opacity: 1;
+  }
+
+  .navMobile.navigationShow {
+    opacity: 1;
+    animation: navShow .3s 1 forwards;
+  }
+
+  .navMobile.navigationHidden {
+    animation: navHidden .3s 1 forwards;
+  }
+
+  .navMobile.navigationHidden ul li {
+    opacity: 0;
+  }
+
+  .navShow .navLine:nth-child(1) {
+    transform: rotate(-45deg) translate(-17%, 200%);
+  }
+
+  .GroupImgBox img {
+    width: 100%;
+  }
+
+  @keyframes mobileTopScale {
+    50% {
+      transform: scale(1.2);
+    }
+
+    100% {
+      transform: scale(0);
+    }
+  }
+
+  @keyframes mobileTopHiddenScale {
+    50% {
+      transform: scale(0.8);
+    }
+
+    100% {
+      transform: scale(0);
+    }
+  }
+
+  @keyframes mobileBottomScale {
+    50% {
+      transform: scale(0.8);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes navShow {
+    0% {
+      height: 0;
+    }
+
+    100% {
+      height: 100vh;
+    }
+  }
+
+  @keyframes navHidden {
+    0% {
+      height: 100vh;
+    }
+
+    100% {
+      height: 0;
+      opacity: 0;
+    }
+  }
+}
+
+/* phone */
+@media(max-width:767px) {
+  .department {
+    height: 150vh;
+    margin-top: 55vh;
+  }
+
+  #logoText>p {
+    animation: logoText 1s 3.5s 1 forwards;
+  }
+
+  #contactBtn {
+    padding: 0 1.5rem;
+    animation: logoText 1.1s 3.5s 1 forwards;
+  }
+
+  .navShow .navLine:nth-child(1) {
+    transform: rotate(-45deg) translate(-35%, 200%);
+  }
+
+  .welcome {
+    font-size: 2rem;
+  }
+}
+
+/* pad */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  canvas,
+  .littleThings {
+    display: block;
+  }
+
+  .container {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  .department {
+    height: 150vh;
+    margin-top: 100vh;
+    background: linear-gradient(#4e3e64, #292236);
+  }
+
+  .DepartmentContent {
+    width: 80%;
+  }
+
+  .DepartmentContentImg {
+    width: 100%;
+  }
+
+  .presidiumMobile {
+    justify-content: space-around;
+    height: 150vh;
+    overflow: hidden;
+  }
+
+  .competion img {
+    height: 65vh;
+  }
+
+  .team {
+    background: linear-gradient(#f1c5b6, 20%, #ffedd678);
+  }
+
+  .presidiumMobile {
+    background: linear-gradient(#433655, #f3c6b7);
+    margin-top: 75vh;
+  }
+
+  .groupText {
+    color: #675959;
+    font-size: 1.3rem;
+  }
+
+  .littleThings img {
+    width: 20%;
+  }
+
+  #logoText {
+    left: 71%;
+    top: 68%;
+    line-height: 1.5;
+  }
+
+  #logoText>p {
+    font-size: 8rem;
+  }
+
+  .littleThings img:nth-child(2) {
+    left: 28%;
+    top: 18%;
+  }
+
+  .activity {
+    top: 350vh;
+    background: linear-gradient(#292236, #443656);
+  }
+
+  .contactUs {
+    background: linear-gradient(#fff6eb, 80%, #615e8b);
+  }
+
+  #contactBtn {
+    padding: 0 3rem;
+  }
+
+  .presidiumMobileSaying {
+    font-size: 1.8rem;
+  }
+
+  #nav {
+    width: 10%;
+  }
+
+  .navShow .navLine:nth-child(1) {
+    transform: rotate(-45deg) translate(-27%, 200%);
+  }
+}
