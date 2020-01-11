@@ -34,8 +34,8 @@ html {
 #logoText {
   color: #f8f9ad;
   position: absolute;
-  right: 14%;
-  top: 15%;
+  right: 10%;
+  top: 17%;
   font-family: 'Dancing Script', cursive;
   display: flex;
   flex-direction: column;
@@ -47,13 +47,13 @@ html {
 
 #logoText>p {
   letter-spacing: 0.15em;
-  font-size: 16rem;
-  transform: translate(0, 60vh);
-  animation: logoText 1.5s 3.5s 1 forwards;
+  font-size: 12rem;
+  transform: translate(0, 100vh);
+  animation: logoText 1.5s 2.5s 1 forwards;
 }
 
-#contactBtn {
-  padding: 0 6rem;
+.linkBtnBox button {
+  padding: 0 4.5rem;
   line-height: 3;
   border: 1px solid #ffffff;
   font-size: 1.3rem;
@@ -61,16 +61,17 @@ html {
   background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
   cursor: pointer;
-  transform: translate(0, 60vh);
-  animation: logoText 3s 3.5s 1 forwards;
-}
-
-.contactBtnBox {
   transition: all .3s;
+  margin-right: 1.25rem;
 }
 
-.contactBtnBox:hover {
+.linkBtnBox button:hover{
   transform: scale(1.3);
+}
+
+.linkBtnBox{  
+  animation: logoText 2s 2.5s 1 forwards;  
+  transform: translate(0, 100vh);
 }
 
 .littleThings {
@@ -88,13 +89,13 @@ html {
   top: 0;
   left: 2%;
   opacity: 0;
-  animation: logoPurplePlant 3s 3.5s forwards;
+  animation: logoPurplePlant 2s 2.5s forwards;
 }
 
 .littleThings img:nth-child(2) {
   left: 28%;
   transform: translate(-16vw, 78vh);
-  animation: flyRocket 3s 3.5s forwards;
+  animation: flyRocket 2s 2.5s forwards;
   top: 18%;
 }
 
@@ -259,7 +260,7 @@ html {
 
 @keyframes logoText {
   0% {
-    transform: translate(0, 60vh);
+    transform: translate(0, 100vh);
     opacity: 0;
   }
 
@@ -375,15 +376,6 @@ html {
   height: 300vh;
   position: relative;
   overflow: hidden;
-}
-
-.activitySlideBox {
-  width: 10vw;
-  position: absolute;
-  top: -5%;
-  transition: all 0.5s ease-in-out;
-  z-index: -2;
-  left: 80%;
 }
 
 .activity img {
@@ -597,14 +589,14 @@ html {
 }
 
 #nav .navLine {
-  width: 40%;
-  height: 8%;
+  width: 55%;
+  height: 14%;
   margin: 1vh;
   transition: all .4s;
 }
 
 .navHidden .navLine {
-  background: #90a8cb;
+  background: #38c7c7;
 }
 
 .navHidden .navLine:nth-child(1),
@@ -621,7 +613,7 @@ html {
 }
 
 .navShow .navLine:nth-child(1) {
-  transform: rotate(-45deg) translate(-30%, 200%);
+ transform: rotate(-45deg) translate(-20%, 180%);;
 }
 
 .navShow .navLine:nth-child(2) {
@@ -665,7 +657,7 @@ html {
   height: 100vh;
   position: fixed;
   overflow: hidden;
-  animation: loadEnd .5s 3s 1 ease-in-out forwards;
+  animation: loadEnd .5s 2s 1 ease-in-out forwards;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -687,7 +679,7 @@ html {
 
 .ball-triangle-path {
   position: relative;
-  animation: ballScale .5s 2s 1 forwards;
+  animation: ballScale .5s 1s 1 forwards;
   width: 100%;
   height: 100%;
 }
@@ -698,7 +690,7 @@ html {
   transform: translate(0vw, 100vh);
   font-family: 'Dancing Script', cursive;
   letter-spacing: .2rem;
-  animation: welcomeText .5s 2.4s 1 forwards;
+  animation: welcomeText .5s 1.5s 1 forwards;
 }
 
 .welcome>span {
@@ -729,15 +721,15 @@ html {
 }
 
 .ball-triangle-path>div:nth-child(1) {
-  animation: ball-triangle-path-1 2s ease-in-out infinite;
+  animation: ball-triangle-path-1 1.5s ease-in-out infinite;
 }
 
 .ball-triangle-path>div:nth-child(2) {
-  animation: ball-triangle-path-2 2s ease-in-out infinite;
+  animation: ball-triangle-path-2 1.5s ease-in-out infinite;
 }
 
 .ball-triangle-path>div:nth-child(3) {
-  animation: ball-triangle-path-3 2s ease-in-out infinite;
+  animation: ball-triangle-path-3 1.5s ease-in-out infinite;
 }
 
 .ball-triangle-path>div {

@@ -238,7 +238,7 @@
     letter-spacing: 1px;
     line-height: 1.5;
     color: #ffffff;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     padding-right: 9vw;
   }
 
@@ -345,7 +345,7 @@
     opacity: 0;
     transition: all .2s ease-in-out;
     position: absolute;
-    top: -35vh;
+    top: -40vh;
     width: 15vw;
     min-height: 30vh;
     left: -3vw;
@@ -427,15 +427,6 @@
   .competion:nth-child(4) {
     top: 60%;
     left: 60%;
-  }
-
-  .slowpoke {
-    position: absolute;
-    bottom: 4%;
-    left: 0;
-    transition: all 3s;
-    width: 50%;
-    z-index: -1;
   }
 
   .cloudBoxA,
@@ -735,7 +726,7 @@
   .hiddenImg {
     position: absolute;
     display: none;
-    top: -100%;
+    top: -80%;
     width: 20vw;
     left: 40%;
   }
@@ -971,8 +962,7 @@
   .project,
   .cloudBoxA,
   .cloudBoxB,
-  .cloudBoxC,
-  .activitySlideBox,
+  .cloudBoxC,·
   #shadow,
   .illustrations,
   .stick,
@@ -980,7 +970,6 @@
   .teamBoxCloud,
   .activityIntroductionText,
   .hiddenImg,
-  .slowpoke,
   .back {
     display: none;
   }
@@ -1062,6 +1051,8 @@
   }
 
   .groupText {
+    width: 60vw;
+    height: 30vh;
     opacity: 1;
     margin: 0;
     font-size: 1rem;
@@ -1247,8 +1238,14 @@
     transform: rotate(-45deg) translate(-17%, 200%);
   }
 
+  .GroupImgBox{
+    width: 40vw;
+    height: 30vh;
+  }
+
   .GroupImgBox img {
     width: 100%;
+    height: 100%;
   }
 
   @keyframes mobileTopScale {
@@ -1311,16 +1308,18 @@
   }
 
   #logoText>p {
-    animation: logoText 1s 3.5s 1 forwards;
+    animation: logoText 1s 2.5s 1 forwards;
   }
 
-  #contactBtn {
-    padding: 0 1.5rem;
-    animation: logoText 1.1s 3.5s 1 forwards;
+  .linkBtnBox button {
+    padding: 0;
+    width: 100%;
+    animation: logoText 1.1s 2.5s 1 forwards;
+    margin: 2rem 0;
   }
 
   .navShow .navLine:nth-child(1) {
-    transform: rotate(-45deg) translate(-35%, 200%);
+    transform: rotate(-45deg) translate(-25%, 180%);
   }
 
   .welcome {
@@ -1404,10 +1403,6 @@
 
   .contactUs {
     background: linear-gradient(#fff6eb, 80%, #615e8b);
-  }
-
-  #contactBtn {
-    padding: 0 3rem;
   }
 
   .presidiumMobileSaying {

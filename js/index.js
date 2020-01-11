@@ -194,14 +194,6 @@ const nav = (selection) => {
 
   }
 
-  $('#contactBtn').click(() => {
-    $('html, body').animate({
-      scrollTop: document.querySelector('.contactUs').offsetTop
-    }, 1000)
-    $('#illustrationsTree').css('transform', 'scale(1)').css('display', 'block')
-    $('.home').css('opacity', '0')
-  })
-
   $('#arraw').click(() => {
     $('html, body').animate({
       scrollTop: window.innerHeight
@@ -430,28 +422,7 @@ const allScroll = () => {
         (document.documentElement.scrollTop - activity.offsetTop - activity.ImgTop[i - 1] > 0 && document.documentElement.scrollTop - activity.offsetTop - activity.ImgTop[i] <= 0) ?
         func($(activity.el.get(i))) : ''
 
-      $($('.competion')[3]).attr('class') == 'competion comeq4 show' ?
-        $('.slowpoke').css('left', '50%') :
-        $('.slowpoke').css('left', '0%')
-
     }
-
-  }
-
-  function activityFlyGirlScroll(elementScrollTop) {
-    activity.r = window.innerWidth * 0.8;
-    if (elementScrollTop - activity.offsetTop + window.innerHeight * 0.2 >= 0 && elementScrollTop - (activity.offsetTop + window.innerHeight * 1.5) <= 0) {
-      activity.y0 = elementScrollTop - activity.offsetTop;
-      activity.left = Math.abs(Math.sqrt(Math.pow(activity.r, 2) - Math.pow(activity.y0, 2)) + activity.x0)
-      activity.rotate = Math.cos(activity.y0) + elementScrollTop * 0.002
-    } else {
-      activity.y0 = elementScrollTop - (activity.offsetTop + window.innerHeight * 1.5)
-      activity.left = Math.abs(Math.sqrt(Math.pow(activity.r, 2) + Math.pow(activity.y0, 2)) + activity.x0)
-      activity.rotate = Math.cos(activity.y0) - elementScrollTop * 0.002
-    }
-    activity.scale = Math.sin((elementScrollTop - activity.offsetTop) * 0.001) + window.innerWidth * 0.0008
-    activity.top = elementScrollTop - activity.offsetTop + window.innerHeight * 0.60
-    $('.activitySlideBox').css('top', `${activity.top}px`).css('left', `${activity.left}px`).css('transform', `rotate(${activity.rotate}deg) scale(${activity.scale})`)
   }
 
   function illustrationsScroll(e) {
@@ -484,10 +455,8 @@ const allScroll = () => {
     if (elementScrollTop - activity.offsetTop + window.innerHeight * 0.2 >= 0 && elementScrollTop - (activity.offsetTop + window.innerHeight * 2.3) <= 0) {
       if (Math.abs(elementScrollTop - beforeElementScrollTop) > 10) {
         activityImgScroll(e, elementScrollTop)
-        activityFlyGirlScroll(elementScrollTop)
       }
-    } else if (elementScrollTop - activity.offsetTop + window.innerHeight * 0.2 <= 0)
-      $('.activitySlideBox').css('top', '-5%').css('left', '80%')
+    }
     $('.presidiumContent ul').css('transform', `translate3d(-${presidium.percent}vw,0,0)`)
   }
 

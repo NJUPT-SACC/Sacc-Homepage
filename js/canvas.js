@@ -24,7 +24,7 @@ setTimeout(() => {
   Interval()
   stopBodyScroll(false)
   $('.load').remove()
-}, 3800)
+}, 2500)
 
 
 function drawPartCurve(lineWidth, strokeColor, lineDash, startPonit, endPoint, radian) {
@@ -45,23 +45,24 @@ function drawPartCurve(lineWidth, strokeColor, lineDash, startPonit, endPoint, r
 }
 
 function drawCurve() { //画轨迹
+  let lineWidthA = window.innerWidth 
   // drawFirstCurve
-  drawPartCurve(35, '#e4b0a0', [80, 30], [280, -10], [150, 230], 0.1)
-  drawPartCurve(35, '#de8479', [80, 30], [150, 230], [0, 350], 0.1)
+  drawPartCurve(window.innerWidth*0.025 , '#e4b0a0', [80, 30], [280, -10], [150, 230], 0.1)
+  drawPartCurve(window.innerWidth*0.025, '#de8479', [80, 30], [150, 230], [0, 350], 0.1)
 
   // drawSecondCurve
-  drawPartCurve(40, '#8692fe', [110, 50], [580, -10], [405, 400], 0.1)
-  drawPartCurve(40, '#96d493', [110, 50], [416, 384], [-100, 900], 0.07)
+  drawPartCurve(window.innerWidth*0.028, '#8692fe', [110, 50], [580, -10], [405, 400], 0.1)
+  drawPartCurve(window.innerWidth*0.028, '#96d493', [110, 50], [416, 384], [-100, 900], 0.07)
 
   // drawThirdCurve
-  drawPartCurve(35, '#5f8faa', [140, 50], [1430, -10], [1300, 650], 0.15)
-  drawPartCurve(35, '#febc7f', [140, 50], [1300, 649], [550, 1250], 0.15)
-  drawPartCurve(35, '#ff9281', [140, 50], [550, 1249], [-100, 1400], 0.1)
+  drawPartCurve(window.innerWidth*0.025, '#5f8faa', [140, 50], [1430, -10], [1300, 650], 0.15)
+  drawPartCurve(window.innerWidth*0.025, '#febc7f', [140, 50], [1300, 649], [550, 1250], 0.15)
+  drawPartCurve(window.innerWidth*0.025, '#ff9281', [140, 50], [550, 1249], [-100, 1400], 0.1)
 
   // drawFourthCurve
-  drawPartCurve(30, '#cd5dbf', [160, 60], [1880, 550], [1620, 1211], 0.06)
-  drawPartCurve(30, '#82fef6', [160, 60], [1621, 1210], [620, 2300], 0.14)
-  drawPartCurve(30, '#4f70d9', [160, 60], [620, 2300], [-100, 2600], 0.1)
+  drawPartCurve(window.innerWidth*0.022, '#cd5dbf', [160, 60], [1880, 550], [1620, 1211], 0.06)
+  drawPartCurve(window.innerWidth*0.022, '#82fef6', [160, 60], [1621, 1210], [620, 2300], 0.14)
+  drawPartCurve(window.innerWidth*0.022, '#4f70d9', [160, 60], [620, 2300], [-100, 2600], 0.1)
 
 }
 
